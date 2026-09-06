@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+dnf install -y python3-pip
+pip3 install flask
+
+mkdir -p /opt/app
+cat > /opt/app/app.py << 'PYEOF'
+${app_py}
+PYEOF
+
+cat > /etc/systemd/system/backend.service << 'SVCEOF'
+[Unit]
+Description=SaaS demo backend
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/app/app.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+
+systemctl daemon-reload
+systemctl enable backend
+systemctl start backend
