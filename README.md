@@ -73,6 +73,7 @@ the way full deregistration (Scenario 1) is.
 
 **Fix:** restored the correct `/health` path, verified the target returned
 to `healthy`.
+![image alt](https://github.com/gkoufie1/sre-503-incident-lab/blob/6e29edd788cd05634de2c54a1fa49396a7f0ccef/alb.png)
 
 ### 3. Security group blocking the health check port
 
