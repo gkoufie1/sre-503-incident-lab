@@ -86,6 +86,7 @@ rejecting it. Real customer traffic got **`504 Gateway Timeout`**, a third
 distinct status code from this set of scenarios.
 
 **Fix:** restored the ingress rule, verified recovery to `200`.
+![image alt](https://github.com/gkoufie1/sre-503-incident-lab/blob/510248ebdb656d120e512546d8ce021823ab90ac/ec2server.png)
 
 ### 4. Real application-level bug (matches the job posting's exact symptom)
 
