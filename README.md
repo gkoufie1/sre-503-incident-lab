@@ -130,6 +130,7 @@ confirm what kind of failure it is (connection error vs. timeout vs.
 nothing), and if the Target Group looks healthy but specific functionality
 is broken, the answer is in the application's own logs, not the
 infrastructure layer at all.
+![image alt](https://github.com/gkoufie1/sre-503-incident-lab/blob/671e4f3c4684fec6d5dcaed7281a92c345260727/target.png)
 
 ## Repository structure
 
