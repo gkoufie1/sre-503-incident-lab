@@ -12,6 +12,7 @@ about it.
 ```
 Browser → Cloudflare (proxied) → ALB → Target Group → EC2 (Flask app, systemd)
 ```
+![image alt](https://github.com/gkoufie1/sre-503-incident-lab/blob/028af756efc01fa7affb4667653cfd4dcebec027/Arch.png)
 
 - **EC2** — Amazon Linux 2023, `t3.micro`, running a small Flask app
   (`app/app.py`) as a systemd service, with `/health`, `/api/v1/user/me`,
